@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PowerNaps</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ayush-ranjan-official/Mindfull-Website/main/battery-charging.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="powerStyle.css">
+</head>
+
+<body>
+    
+    
+    <div>
+        <h1 id="clock"></h1>
+    </div>
+    
+    <div id="center">
+        <div id="setAl">
+            <input type="time" name="alarmTimeSelect" id="alarmTimeSelect" value="00:00">
+            <button id="setAlrm" onclick="setAlrmTime()">Set Alarm</button>
+        </div>
+
+        
+        <div id="setSnooze">
+            Set Snooze Time :<input type="number" name="snoozeTimeSelect" id="snoozeTimeSelect">
+        </div>
+        <span id="alarm">Alarm not set</span></br>
+        <button id="snoozAlrm" onclick="snooze()">Snooze Alarm</button></br>
+        <!--Inline elements(span) are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.A Block-level element(div) occupies the entire horizontal space of its parent element (container)-->
+        
+        
+        
+    </div>
+</body>
+<script src="powerScript.js"></script>
+</html>

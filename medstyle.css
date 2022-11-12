@@ -1,0 +1,250 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(25, 69, 212);
+    
+    
+    /*background-color: black !important;*/
+    min-width: 10vw;
+    min-height: 100vh;
+    text-align: center;
+    margin: 20px;
+}
+/* <!-- HTML !-->
+<button class="button-85" role="button">Button 85</button> */
+
+/* CSS */
+#side{
+  position: absolute;
+  left: 25px;
+}
+#setAlrm {
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  height: 50px;
+  
+}
+
+#setAlrm:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#setAlrm:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+#snoozAlrm {
+    font-family: 'Comfortaa', cursive;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#snoozAlrm:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#snoozAlrm:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+#snoozAlrm { 
+    font-family: 'Comfortaa', cursive;
+    font-size: 3vw;
+    /* color: chartreuse;
+    background: black;
+    border: 2px solid chartreuse;
+    border-radius: 5px; */
+    width: 800px;
+    height: 300px;
+    margin: 20px;
+     
+}
+
+/* #snoozAlrm:hover {
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+    margin: 20px;
+} */
+
+h1 { 
+    font-size: 3vw;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(230, 28, 199);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 30px;    
+}
+
+span { 
+    font-size: 3vw;
+    font-family: 'Comfortaa', cursive;
+    margin: 20px;
+       
+}
+
+#center{
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 20px;
+}
+#setSnooze{
+    font-family: 'Comfortaa', cursive;
+    font-size: 3vw;
+    margin: 20px;
+}
+
+#alarmTimeSelect {
+    font-family: 'Comfortaa', cursive;
+    font-size: 3vw;
+        color: rgb(234, 21, 99);
+        background: black;
+        border: 2px solid chartreuse;
+        border-radius: 5px;
+        margin: 20px;
+          
+    }
+#setAl{
+    margin: auto;
+}
+
+#snoozeTimeSelect {
+        font-family: 'Comfortaa', cursive;
+        font-size: 3vw;
+        color: rgb(43, 0, 255);
+        background: black;
+        border: 2px solid chartreuse;
+        border-radius: 5px;
+        width: 100px;
+        margin: 20px;
+             
+        }
+        #myVideo {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            z-index: -10;
+          }
+    
+    /*input[type=time]::-webkit-inner-spin-button,
+    input[type=time]::-webkit-outer-spin-button {  
+    background-color: black;
+    color: chartreuse;
+    opacity: 1;
+    
+    }*/
